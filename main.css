@@ -15,7 +15,7 @@ main {
 
 /* Heldenbereich-Design */
 .hero {
-    background-image: url('/Assets/background3.jpg'); /* Definiert ein Hintergrundbild für den Heldenbereich */
+    background-image: url('./Assets/background3.jpg'); /* Definiert ein Hintergrundbild für den Heldenbereich */
     background-size: cover; /* Stellt sicher, dass das Hintergrundbild den gesamten Bereich abdeckt */
     background-position: center; /* Zentriert das Hintergrundbild */
     width: 70%; /* Setzt die Breite des Heldenbereichs auf 70% des Containers */
