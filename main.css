@@ -1,0 +1,133 @@
+/* Allgemeine Stileinstellungen */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Standardschriftart für die Webseite */
+    scroll-behavior: smooth; /* Aktiviert sanftes Scrollen auf der gesamten Seite */
+    background-color: #f4f4f9; /* Setzt den Hintergrund auf ein helles Grau, konsistent mit anderen Seiten */
+    color: #333; /* Definiert die Standard-Textfarbe als dunkles Grau für bessere Lesbarkeit */
+}
+
+/* Layout-Container */
+main {
+    display: flex; /* Aktiviert das Flexbox-Layout für eine einfache Anordnung der Helden- und Seitenleistenbereiche */
+    height: 100vh; /* Setzt die Höhe des Hauptcontainers auf die volle Höhe des Viewports */
+}
+
+/* Heldenbereich-Design */
+.hero {
+    background-image: url('/Assets/background3.jpg'); /* Definiert ein Hintergrundbild für den Heldenbereich */
+    background-size: cover; /* Stellt sicher, dass das Hintergrundbild den gesamten Bereich abdeckt */
+    background-position: center; /* Zentriert das Hintergrundbild */
+    width: 70%; /* Setzt die Breite des Heldenbereichs auf 70% des Containers */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Verteilte die Inhalte gleichmäßig innerhalb des Heldenbereichs */
+    color: white; /* Textfarbe innerhalb des Heldenbereichs */
+    position: relative; /* Ermöglicht die Positionierung von Inhalten relativ zum Heldenbereich */
+    padding: 50px; /* Fügt Innenabstand hinzu, um den Inhalt vom Rand zu entfernen */
+}
+
+.hero header {
+    position: absolute;
+    top: 20px; /* Positioniert den Header 20px vom oberen Rand des Heldenbereichs entfernt */
+    right: 20px; /* Positioniert den Header 20px vom rechten Rand des Heldenbereichs entfernt */
+    display: flex;
+    justify-content: flex-end; /* Stellt sicher, dass die Navigationslinks nach rechts ausgerichtet sind */
+}
+
+.hero header ul {
+    list-style: none; /* Entfernt Aufzählungszeichen von der Liste */
+    display: flex; /* Stellt die Liste als flexible horizontale Reihe dar */
+    gap: 20px; /* Fügt einen Abstand von 20px zwischen den einzelnen Listenelementen ein */
+}
+
+.hero header ul li a {
+    text-decoration: none; /* Entfernt die Standardunterstreichung von Links */
+    color: white; /* Setzt die Linkfarbe auf Weiß, um sie sichtbar zu machen */
+    font-weight: bold; /* Macht die Links fett, um sie hervorzuheben */
+}
+
+.hero-content {
+    max-width: 600px; /* Begrenzung der maximalen Breite des Textes im Heldenbereich */
+    margin-top: 220px; /* Verschiebt den Text nach unten, um ihn zentraler zu positionieren */
+}
+
+.hero h1 {
+    font-size: 4em; /* Setzt die Schriftgröße der Hauptüberschrift auf 4em für große Lesbarkeit */
+    margin: 0; /* Entfernt den Standardaußenabstand */
+    color: #ecf0f1; /* Hellt die Überschrift auf, passend zur Farbpalette der Seite */
+}
+
+.hero p {
+    font-size: 1.5em; /* Setzt die Schriftgröße der Absätze im Heldenbereich */
+    margin-top: 20px; /* Fügt Abstand zwischen der Überschrift und den Absätzen hinzu */
+    color: #ecf0f1; /* Gleiche helle Textfarbe für Lesbarkeit */
+}
+
+/* Seitenleisten-Design */
+.sidebar {
+    width: 30%; /* Setzt die Breite der Seitenleiste auf 30% des Containers */
+    background-color: #34495e; /* Setzt den Hintergrund der Seitenleiste auf ein dunkles Blau-Grau, konsistent mit der Farbpalette */
+    display: flex;
+    align-items: center; /* Zentriert die Inhalte vertikal in der Seitenleiste */
+    justify-content: center; /* Zentriert die Inhalte horizontal in der Seitenleiste */
+    padding: 50px; /* Fügt Innenabstand hinzu, um den Inhalt vom Rand der Seitenleiste zu entfernen */
+    color: #ecf0f1; /* Helle Textfarbe für die Seitenleiste, passend zum Gesamtbild */
+}
+
+.sidebar ul {
+    list-style: none; /* Entfernt Aufzählungszeichen von der Liste */
+    padding: 0; /* Entfernt den Standardinnenabstand */
+}
+
+.sidebar ul li {
+    margin: 20px 0; /* Fügt einen vertikalen Abstand von 20px zwischen den Listenelementen hinzu */
+}
+
+.sidebar ul li a {
+    text-decoration: none; /* Entfernt die Unterstreichung von Links */
+    color: #ecf0f1; /* Helle Textfarbe für Links, um sie lesbar zu machen */
+    font-size: 1.2em; /* Setzt die Schriftgröße der Links in der Seitenleiste */
+    font-weight: bold; /* Macht die Links fett, um sie hervorzuheben */
+}
+
+.sidebar ul li a:hover {
+    color: #bdc3c7; /* Hellerer Farbton beim Überfahren von Links, um eine Rückmeldung bei der Interaktion zu geben */
+}
+
+/* Media Queries für responsive Design */
+@media (max-width: 1080px) {
+    .hero h1 {
+        font-size: 3em; /* Verringert die Schriftgröße der Hauptüberschrift auf kleineren Bildschirmen */
+    }
+
+    .hero p {
+        font-size: 1.2em; /* Verringert die Schriftgröße der Absätze auf kleineren Bildschirmen */
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column; /* Stapelt die hero- und sidebar-Bereiche vertikal auf kleineren Bildschirmen */
+    }
+
+    .hero, .sidebar {
+        width: 100%; /* Setzt die Breite beider Bereiche auf 100%, wenn sie gestapelt werden */
+        height: 50vh; /* Verringert die Höhe der Bereiche, um Platz zu sparen */
+    }
+
+    header {
+        position: static; /* Setzt den Header auf eine Standardposition zurück, wenn er gestapelt wird */
+        background-color: rgba(0, 0, 0, 0.5); /* Fügt einen transparenten schwarzen Hintergrund für bessere Lesbarkeit hinzu */
+        width: 100%; /* Setzt die Breite des Headers auf 100% */
+    }
+
+    header ul {
+        justify-content: center; /* Zentriert die Navigationslinks horizontal */
+        padding: 10px 0; /* Fügt einen Innenabstand hinzu */
+    }
+
+    header ul li a {
+        color: white; /* Setzt die Linkfarbe auf Weiß, um die Lesbarkeit sicherzustellen */
+    }
+}

@@ -1,0 +1,71 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #eef2f3, #8e9eab); /* Hintergrund mit sanftem Farbverlauf */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #34495e;
+    color: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #34495e;
+    margin-top: 30px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 30px;
+}
+
+li::before {
+    content: '\2022';
+    color: #3498db; /* Blaue Farbe für die Bullet Points */
+    font-size: 1.5em;
+    position: absolute;
+    left: 0;
+    top: -3px;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    main {
+        padding: 20px;
+    }
+}

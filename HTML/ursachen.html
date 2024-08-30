@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ursachen</title>
+    <!-- Verlinkung der CSS-Datei für den Emissionsabschnitt -->
+    <link rel="stylesheet" href="/CSS/ursachen.css">
+    <!-- Einbinden der Chart.js-Bibliothek -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Verlinkung der CSS-Datei für das Menü -->
+    <link rel="stylesheet" href="/CSS/menu.css">
+    <script src="/path/to/resize.js"></script>
+</head>
+<body>
+    <!-- Menü-Platzhalter -->
+    <div id="menu-placeholder"></div>
+    
+    <section class="page ursachen">
+        <div class="header">
+            <h1 class="center-text">Ursachen</h1> <!-- zentrierter Überschrift -->
+        </div>
+        <div class="content-container">
+            <!-- Canvas-Element, auf dem das Diagramm angezeigt wird -->
+            <div class="chart-container">
+                <canvas id="ursachenChart"></canvas>
+            </div>
+            <!-- Textfeld zum Erklären des Diagramms -->
+            <div class="text-container">
+                <h2>Hauptquellen der Luftverschmutzung in Deutschland</h2>
+                <ul>
+                    <li><strong>Industrielle Prozesse:</strong> Vor allem in der Schwerindustrie und chemischen Industrie entstehen hohe Emissionen von Schwefeldioxid, Stickoxiden und Feinstaub.</li>
+                    <li><strong>Verkehr:</strong> Eine der größten Quellen für Stickoxide und Feinstaub. Der Ausbau des öffentlichen Nahverkehrs ist entscheidend.</li>
+                    <li><strong>Energieerzeugung:</strong> Besonders Kohlekraftwerke tragen erheblich zur Emission von Schwefeldioxid und Feinstaub bei.</li>
+                    <li><strong>Landwirtschaft:</strong> Hauptsächlich verantwortlich für die Emission von Ammoniak, das zur Bildung von Feinstaub und saurem Regen beiträgt.</li>
+                </ul>
+
+                <h2>Erklärung des Diagramms</h2>
+                <p>
+                    Das Diagramm zeigt die Entwicklung der Emissionen verschiedener Luftschadstoffe in Deutschland von 1995 bis 2030. Die unterschiedlichen Linien repräsentieren Indexwerte für Schwefeldioxid, Stickoxide, Ammoniak, NMVOC (flüchtige organische Verbindungen) und Feinstaub (PM2.5).
+                </p>
+                <p>
+                    Die Emissionen von Schwefeldioxid waren zu Beginn der Periode besonders hoch, da fossile Brennstoffe intensiv genutzt wurden. Dank technologischer Fortschritte und der Umstellung auf sauberere Energien sind diese Emissionen deutlich zurückgegangen.
+                </p>
+                <p>
+                    Stickoxide und Feinstaub, die vor allem durch den Verkehr und industrielle Prozesse verursacht werden, haben ebenfalls eine abnehmende Tendenz. Diese Reduktionen spiegeln Deutschlands Maßnahmen zur Verbesserung der Luftqualität wider.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Verlinkung der JavaScript-Datei für das Emissionsdiagramm -->
+    <script src="/Js/ursachen.js"></script>
+    <!-- Verlinkung der JavaScript-Datei für das Menü -->
+    <script src="/Js/menu.js"></script>
+
+</body>
+</html>

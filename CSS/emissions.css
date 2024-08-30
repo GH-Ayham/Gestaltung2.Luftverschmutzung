@@ -1,0 +1,99 @@
+/* Grundlegende Stile für Text und Hintergrund */
+body, html {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f7;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header-Stil */
+.header {
+    background-color: #34495e;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+/* Flexbox-Container für das Diagramm und den Text */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-grow: 1;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    height: calc(100vh - 160px); /* Berechnet die Höhe des Inhaltsbereichs */
+}
+
+/* Stil für das Diagramm */
+.chart-container {
+    flex: 2;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Höhe auf 100% des Elterncontainers setzen */
+}
+
+/* Stil für den Textcontainer */
+.text-container {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: 90%; /* Maximale Höhe auf 100% des Elterncontainers setzen */
+}
+
+/* Text-Stile für Überschriften und Absätze */
+.text-container h2 {
+    color: #2c3e50;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.text-container p,
+.text-container ul {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #34495e;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Stil für die Jahresauswahl-Schaltflächen */
+.year-selection {
+    display: flex;
+    justify-content: center;
+    background-color: #2c3e50;
+    padding: 10px;
+    border-top: 2px solid #34495e;
+    flex-shrink: 0;
+}
+
+.year-selection button {
+    background-color: #34495e;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.year-selection button:hover {
+    background-color: #3e5a73;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emissionen von Luftschadstoffen</title>
+    <link rel="stylesheet" href="/CSS/emissions.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Verlinkung der CSS-Datei für das Menü -->
+    <link rel="stylesheet" href="/CSS/menu.css">
+</head>
+<body>
+    <!-- Menü-Platzhalter -->
+    <div id="menu-placeholder"></div>
+    
+    <div class="page">
+        <div class="header">
+            <h1>Emissionen von Luftschadstoffen</h1>
+        </div>
+        <div class="content-container">
+            <div class="chart-container">
+                <canvas id="emissionsChart"></canvas>
+            </div>
+            <div class="text-container">
+                <p>Diese Seite zeigt die Entwicklung der Emissionen von Luftschadstoffen in Deutschland von 1995 bis 2030. Deutschland hat in diesem Zeitraum zahlreiche Maßnahmen ergriffen, um die Luftverschmutzung zu reduzieren und die Lebensqualität zu verbessern.</p>
+                <p>Verwenden Sie die untenstehenden Schaltflächen, um detaillierte Informationen zu den einzelnen Zeiträumen zu erhalten und zu sehen, welche Fortschritte in den jeweiligen Jahren erzielt wurden.</p>
+            </div>
+        </div>
+        <div class="year-selection">
+            <button>Bis 2000</button>
+            <button>Bis 2005</button>
+            <button>Bis 2010</button>
+            <button>Bis 2015</button>
+            <button>Bis 2020</button>
+            <button>Bis 2030</button>
+        </div>
+    </div>
+    
+    <script src="/Js/emissions.js"></script>
+    <script src="/Js/menu.js"></script>
+    <script src="/Js/resize.js"></script>
+</body>
+</html>
