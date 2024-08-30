@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    fetch('/HTML/menu.html')
+    fetch('../HTML/menu.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('menu-placeholder').innerHTML = data;
